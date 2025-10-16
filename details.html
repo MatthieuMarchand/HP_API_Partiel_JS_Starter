@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/details.js" defer type="module"></script>
-    <title>PRENOM - Harry Potter</title>
+    <title>Matthieu - Harry Potter</title>
+    <script defer src="scripts/displayCharacterDetail.js"></script>
   </head>
   <body class="page_perso">
     <header class="header">
@@ -16,12 +17,6 @@
       </div>
       <div class="header__left">
         <h1>Wiki Harry Potter</h1>
-        <!-- <ul>
-          <li>Students</li>
-          <li>Staff</li>
-          <li>Houses</li>
-          <li>Spells</li>
-        </ul> -->
         <img src="./images/menu.png" alt="" srcset="" />
       </div>
     </header>
@@ -33,7 +28,7 @@
             <img src="./images/characters/harry.webp" alt="" srcset="" />
             <figcaption>Daniel<br />Radcliffe</figcaption>
           </figure>
-          <div class="perso__right">
+          <div class="perso__right" id="character_information">
             <table>
               <tbody>
                 <tr>
@@ -61,7 +56,7 @@
           </div>
         </div>
       </section>
-      <section class="house__perso">
+      <section class="house__perso" id="house_blason">
         <img src="./images/logo/Gryffindor.png" alt="" srcset="" />
       </section>
     </main>

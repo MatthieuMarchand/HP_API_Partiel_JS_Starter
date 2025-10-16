@@ -25,6 +25,11 @@ function displayCharacters(characters) {
       characterDiv.classList.add(character.house.toLowerCase());
     }
 
+    characterDiv.addEventListener("click", () => {
+      const idEncoded = encodeURIComponent(character.id);
+      window.location.href = `details.html?id=${idEncoded}`;
+    });
+
     characterDiv.innerHTML = `
         <img src="${character.image}" alt="Portrait of ${character.name}" />
         <p>${character.name}</p>
